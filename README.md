@@ -33,7 +33,7 @@ The objective of this project is to develop a simple monitoring and control syst
 - **LabVIEW**
 - Graphical Programming
 
-  ## System Working
+## System Working
 
 The system continuously generates and monitors simulated machine parameters inside a LabVIEW While Loop.
 
@@ -128,6 +128,7 @@ Simulated Machine Parameters
      Update Indicators
             ↓
        Repeat Loop
+```
 - Industrial Monitoring & Control
 - Simulation
 - Data Visualization
