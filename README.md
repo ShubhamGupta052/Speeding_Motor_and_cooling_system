@@ -1,86 +1,97 @@
-# ⚙️ Speed Monitoring and Cooling System in Industrial Machinery
+# Speed Monitoring and Cooling System in Industrial Machinery
 
-A **LabVIEW-based industrial monitoring and control system** designed to monitor motor speed and machine temperature while automatically controlling a cooling fan based on predefined operating conditions.
+A LabVIEW-based industrial monitoring system designed to monitor **motor speed, RPM, and machine temperature** while controlling a cooling fan according to predefined operating conditions.
 
-The project simulates an industrial machine environment and demonstrates how LabVIEW can be used for **real-time monitoring, threshold-based decision making, and automated control**.
+The system uses simulated machine parameters and LabVIEW graphical programming to demonstrate a basic industrial monitoring and control application.
 
----
+## Features
 
-## 🚀 Features
+- Real-time motor speed monitoring
+- RPM measurement and display
+- Analog motor-speed gauge
+- Machine temperature monitoring
+- Temperature status indication
+- Automatic cooling fan control
+- FAN ON / FAN OFF indication
+- High-speed condition detection
+- Continuous machine monitoring
+- Simulated industrial operating conditions
 
-- 📊 Real-time **Motor Speed / RPM monitoring**
-- 🌡️ Machine **Temperature monitoring**
-- 📈 Graphical motor-speed gauge
-- 🟢 Automatic **FAN ON / FAN OFF** control
-- 🔥 Machine heating status indication
-- ⚠️ High-speed condition detection
-- 📋 Temperature classification:
-  - Low
-  - Normal
-  - High
-- 🖥️ Industrial-style LabVIEW Front Panel
-- 🔄 Continuous monitoring using a While Loop
-- 🧪 Simulated machine parameters for testing
+## Project Objective
 
----
+The objective of this project is to develop a simple monitoring and control system that can:
 
-## 🎯 Project Objective
+- Monitor the speed of an industrial motor.
+- Display the motor speed in RPM.
+- Monitor machine temperature.
+- Identify different machine heating conditions.
+- Automatically control the cooling fan.
+- Provide clear visual feedback to the operator.
 
-The objective of this project is to develop a simple industrial monitoring system capable of:
-
-1. Monitoring motor speed.
-2. Monitoring machine temperature.
-3. Detecting abnormal operating conditions.
-4. Automatically activating the cooling fan when required.
-5. Providing clear visual feedback to the operator.
-
----
-
-## 🛠️ Technology Used
+## Technology
 
 - **LabVIEW**
 - Graphical Programming
-- While Loop
-- Case Structure
-- Shift Registers
-- Comparison Functions
-- Select Functions
-- Boolean Logic
-- Arithmetic Operations
 
-  ## ⚙️ System Working
+  ## System Working
 
-The system continuously monitors the simulated motor operating conditions.
+The system continuously generates and monitors simulated machine parameters inside a LabVIEW While Loop.
 
-### 1. Motor Speed Monitoring
+### Motor Speed Monitoring
 
-The motor speed is displayed using:
+The motor speed is monitored continuously and displayed in two forms:
 
-- Numerical RPM indicator
+- Numerical RPM value
 - Analog speed gauge
 
-The measured/simulated speed is continuously compared with predefined thresholds.
+The speed is compared with predefined threshold values to determine the operating condition of the motor.
 
-Based on the speed condition, the system determines whether cooling action is required.
+### Cooling Fan Control
 
----
+The motor speed is evaluated against predefined limits.
 
-### 2. Temperature Monitoring
+When the required condition is detected, the cooling fan is activated automatically.
 
-The machine temperature is continuously calculated and displayed in degrees Celsius.
+The current fan condition is displayed on the Front Panel as:
 
-The temperature condition is classified into three levels:
+- **FAN ON**
+- **FAN OFF**
 
-```text
-              Machine Temperature
-                       │
-          ┌────────────┼────────────┐
-          ▼            ▼            ▼
-         Low         Normal         High
-- String Formatting
-- Timing Functions
-- Data Visualization
-```
+### Temperature Monitoring
+
+The system calculates and displays the machine temperature in degrees Celsius.
+
+The temperature condition is classified into:
+
+- **Low**
+- **Normal**
+- **High**
+
+The corresponding condition is displayed using the Machine Heating indicator.
+
+## Front Panel
+
+The Front Panel provides an industrial-style monitoring interface containing:
+
+- Motor Speed Gauge
+- RPM Indicator
+- Temperature Indicator
+- FAN Status
+- Machine Heating Indicator
+- Temperature Status
+
+### Front Panel
+
+![Speed Monitoring and Cooling System - Front Panel](Images/Front-Panel.png)
+
+## Block Diagram
+
+The Block Diagram contains the main monitoring and control logic implemented using LabVIEW graphical programming.
+
+### Block Diagram
+
+![Speed Monitoring and Cooling System - Block Diagram](Images/Block-Diagram.png)
+
 ## LabVIEW Implementation
 
 The system is implemented using several core LabVIEW programming concepts.
@@ -117,4 +128,6 @@ Simulated Machine Parameters
      Update Indicators
             ↓
        Repeat Loop
-```
+- Industrial Monitoring & Control
+- Simulation
+- Data Visualization
