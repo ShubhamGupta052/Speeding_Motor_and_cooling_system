@@ -82,7 +82,7 @@ The Front Panel provides an industrial-style monitoring interface containing:
 
 ### Front Panel
 
-![Speed Monitoring and Cooling System - Front Panel](Images/Front-Panel.png)
+![Speed Monitoring and Cooling System - Front Panel](Images/Front_Panel.png)
 
 ## Block Diagram
 
@@ -90,7 +90,7 @@ The Block Diagram contains the main monitoring and control logic implemented usi
 
 ### Block Diagram
 
-![Speed Monitoring and Cooling System - Block Diagram](Images/Block-Diagram.png)
+![Speed Monitoring and Cooling System - Block Diagram](Images/Block_Diagram.png)
 
 ## LabVIEW Implementation
 
